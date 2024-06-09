@@ -166,16 +166,16 @@ SetRelationshipBetweenGroups(1, GetHashKey('COUGAR'), GetHashKey('PLAYER'))
 -- CAT relationships adjusted for PLAYER
 SetRelationshipBetweenGroups(1, GetHashKey('CAT'), GetHashKey('PLAYER'))
 
-Citizen.CreateThread(function()
-	while true do
-		Citizen.Wait(0)
-		SetVehicleDensityMultiplierThisFrame(Config.VehDensity)
-		SetPedDensityMultiplierThisFrame(Config.PedDensity)
-		SetRandomVehicleDensityMultiplierThisFrame(Config.RanVehDensity)
-		SetParkedVehicleDensityMultiplierThisFrame(Config.ParkCarDensity)
-		SetScenarioPedDensityMultiplierThisFrame(Config.ScenePedDensity, Config.ScenePedDensity)
-	end
-end)
+-- Citizen.CreateThread(function()
+-- 	while true do
+-- 		Citizen.Wait(0)
+-- 		SetVehicleDensityMultiplierThisFrame(Config.VehDensity)
+-- 		SetPedDensityMultiplierThisFrame(Config.PedDensity)
+-- 		SetRandomVehicleDensityMultiplierThisFrame(Config.RanVehDensity)
+-- 		SetParkedVehicleDensityMultiplierThisFrame(Config.ParkCarDensity)
+-- 		SetScenarioPedDensityMultiplierThisFrame(Config.ScenePedDensity, Config.ScenePedDensity)
+-- 	end
+-- end)
 
 Citizen.CreateThread(function()
 	if Config.DispatchDead then
