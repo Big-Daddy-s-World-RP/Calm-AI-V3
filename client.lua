@@ -7,7 +7,7 @@
 -- DO NOT BE STUPID AND WHINE TO ME ABOUT THIS BEING BROKEN IF YOU TOUCHED THE LINES BELOW. --
 ----------------------------------------------------------------------------------------------
 -- PLAYER relationships
-SetRelationshipBetweenGroups(2, GetHashKey('PLAYER'), GetHashKey('PLAYER'))
+SetRelationshipBetweenGroups(0, GetHashKey('PLAYER'), GetHashKey('PLAYER'))
 
 -- CIVMALE relationships
 SetRelationshipBetweenGroups(1, GetHashKey('CIVMALE'), GetHashKey('CIVMALE'))
